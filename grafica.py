@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
                                                        
 ncols=6
 
-N=7 #Nodes per side                                                            
+N=7                                                      
 G=nx.grid_2d_graph(N,N)                                                         
 pos = dict(zip(G.nodes(),G.nodes()))                                            
 ordering = [(y,N-1-x) for y in range(N) for x in range(N)]                      
